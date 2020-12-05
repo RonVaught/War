@@ -1,0 +1,9 @@
+
+https://stackoverflow.com/questions/1891857/how-do-you-stretch-an-image-to-fill-a-div-while-keeping-the-images-aspect-rat
+
+
+https://placehold.it/200x300/880088/ffffff
+
+
+
+children[2].naturalWidth
