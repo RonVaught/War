@@ -3,11 +3,9 @@ const OWNER_DEALER = "Dealer";
 const OWNER_PLAYER = "Player";
 
 const cardIds = ({"CardTopLeft":"DealerLeft", 
-                "CardTopRight":"DealerRight",
                 "CardMidLeft":"MiddleLeft", 
                 "CardMidRight":"MiddleRight",
-                "CardBottomLeft":"PlayerLeft",
-                "CardBottomRight":"PlayerRight"});
+                "CardBottomLeft":"PlayerLeft"});
 
 
 
@@ -15,8 +13,8 @@ class Card {
   constructor(faceValue, suit, fileName) {
     this.faceValue = faceValue;
     this.suit = suit;
-    if (fileName.length==2){
-      this.fileName = '1_UI\\PNG\\' + fileName + '.jpg'; // when we do not have qualified path (on load) for example OOB
+    if (fileName.length <= 3){
+      this.fileName = '1_UI\\PNG\\' + fileName + '.png'; // when we do not have qualified path (on load) for example OOB
     } else{
       this.fileName = fileName;  // when we already have qualified path - when (shuffling) for example 
     }

@@ -31,7 +31,7 @@ class cardAnimations {
         imgIllusion.style.left = imgStart.getBoundingClientRect().left + 'px';// get imgStart's absolute .left (not imgStart container's top)
         imgIllusion.style.height = imgStart.offsetHeight + 'px';
     
-        imgIllusion.setAttribute("src", '1_UI\\\PNG\\gray_back.png'); // gray_back.png    red_back.png    green_back.png
+        imgIllusion.setAttribute("src", '1_UI\\PNG\\gray_back.png'); // gray_back.png    red_back.png    green_back.png
         imgIllusion.setAttribute("alt", "Dealing animation");
         imgIllusion.setAttribute("id", ILLUSION_ELEMENT_ID);
     
@@ -80,7 +80,7 @@ class cardAnimations {
                     }
 
                 }else{
-                    coordModifierLeft -= POS_MODIFIER;  // If we're not (half way 'up') yet - keep moving left
+                    coordModifierLeft -= (POS_MODIFIER * 1.4);  // If we're not (half way 'up') yet - keep moving left
                 }
                 imgIllusion.style.top = coordModifierTop + 'px'; 
                 imgIllusion.style.left = coordModifierLeft + 'px'; 
